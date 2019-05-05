@@ -9,10 +9,10 @@ import java.awt.font.FontRenderContext;
 import java.awt.geom.Rectangle2D;
 import java.beans.*;
 
-public class JumpingCirclesBean extends JPanel implements PropertyChangeListener {
+public class JumpingCirclesBean extends JPanel implements PropertyChangeListener, VetoableChangeListener {
     private static final long serialVersionUID = 1L;
 
-    private final int xSize = 400;
+    private final int xSize = 600;
     private final int ySize = 300;
     private Integer[] valuesX = {xSize / 4, 2 * xSize / 4, 3 * xSize / 4};
     private Integer[] valuesY = {50, 100, 150};
@@ -20,8 +20,9 @@ public class JumpingCirclesBean extends JPanel implements PropertyChangeListener
     private Integer[] jumpPeriod = {1, 10, 10};
     private Color[] colors = {Color.RED, Color.GREEN, Color.BLUE};
     private String title = "Skaczące kółka";
-    private JButton bLaunchButton = new JButton("Start");
+    private JButton bLaunchButton = new JButton("Zmien tytul");
     private JTextField textFieldValuesX = new JTextField(12);
+    private JTextField textFieldTitle = new JTextField(12);
     private JButton buttonChangeValuesX = new JButton("Change value");
 
     private PropertyChangeSupport propertyChangeSupport = new PropertyChangeSupport(this);
@@ -45,20 +46,22 @@ public class JumpingCirclesBean extends JPanel implements PropertyChangeListener
 
     @Override
     public void propertyChange(PropertyChangeEvent evt) {
-        System.out.println(evt.getPropertyName());
+        System.out.println(evt.getPropertyName() + " prop");
        if(evt.getPropertyName().equals("title"))
            title = evt.getNewValue().toString();
+    }
 
-       if(evt.getPropertyName().equals("valuesX")){
-           Integer[] values = (Integer[])evt.getNewValue();
-           if(valuesX[0] < 100)
-               try {
-                   throw new PropertyVetoException("", evt);
-               } catch (PropertyVetoException e) {
-                   System.out.println("wartosc czerwonego kolka musi byc wieksza od 100!");
-               }
-           valuesX = values;
-       }
+    @Override
+    public void vetoableChange(PropertyChangeEvent evt) throws PropertyVetoException{
+        System.out.println(evt.getPropertyName() + " veto");
+        if(evt.getPropertyName().equals("valuesX")){
+            Integer[] values = (Integer[])evt.getNewValue();
+            if(values[0] < 100) {
+                System.out.println("Pierwsza wartosc musi byc wieksza od 99! (to nie jest silnia, tylko wykrzyknik)");
+                throw new PropertyVetoException("", evt);
+            }
+            valuesX = values;
+        }
     }
 
     public JumpingCirclesBean() {
@@ -66,11 +69,12 @@ public class JumpingCirclesBean extends JPanel implements PropertyChangeListener
         bLaunchButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                setTitle("Kolka");
+                setTitle(textFieldTitle.getText());
             }
         });
         this.add(bLaunchButton);
 
+        this.add(textFieldTitle);
         this.add(textFieldValuesX);
 
         buttonChangeValuesX.addActionListener(new ActionListener() {
@@ -98,7 +102,7 @@ public class JumpingCirclesBean extends JPanel implements PropertyChangeListener
 
     @Override
     protected void paintComponent(Graphics g) {
-        g.clearRect(0, 0, 400, 300);
+        g.clearRect(0, 0, xSize, ySize);
         g.setColor(colors[0]);
         g.fillOval(valuesX[0], valuesY[0], 20, 20);
         g.setColor(colors[1]);
@@ -161,11 +165,20 @@ public class JumpingCirclesBean extends JPanel implements PropertyChangeListener
 
     public void setValuesX(Integer[] valuesX){
         try {
-            vetoableChangeSupport.fireVetoableChange("valuesX", this.valuesX, valuesX);
             this.valuesX = new Integer[valuesX.length];
             for (int i = 0; i < valuesX.length; i++)
                 this.valuesX[i] = valuesX[i];
+            vetoableChangeSupport.fireVetoableChange("valuesX", this.valuesX, valuesX);
         } catch(Exception e){e.printStackTrace();}
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        propertyChangeSupport.firePropertyChange("title", this.title, title);
+        this.title = title;
     }
 
     public Integer[] getValuesY() {
@@ -192,15 +205,6 @@ public class JumpingCirclesBean extends JPanel implements PropertyChangeListener
         this.colors = colors;
     }
 
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        propertyChangeSupport.firePropertyChange("title", this.title, title);
-        this.title = title;
-    }
-
     public Integer[] getJumpPeriod() {
         return jumpPeriod;
     }
@@ -213,7 +217,7 @@ public class JumpingCirclesBean extends JPanel implements PropertyChangeListener
 
     public static void main(String[] args) {
         JFrame frame = new JFrame();
-        frame.setSize(new Dimension(418, 300));
+        frame.setSize(new Dimension(600, 300));
         frame.setContentPane(new JumpingCirclesBean());
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
