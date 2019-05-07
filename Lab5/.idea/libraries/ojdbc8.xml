@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="ojdbc8">
+    <CLASSES>
+      <root url="jar://D:/Zapis/Pulpit/ojdbc8-full/ojdbc8.jar!/" />
+      <root url="jar://D:/Zapis/Pulpit/ojdbc8-full/oraclepki.jar!/" />
+      <root url="jar://D:/Zapis/Pulpit/ojdbc8-full/osdt_core.jar!/" />
+      <root url="jar://D:/Zapis/Pulpit/ojdbc8-full/osdt_cert.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
