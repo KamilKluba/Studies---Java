@@ -8,7 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ef733592-afac-474e-acc3-f111ef4da11a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bean/JumpingCirclesBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/JumpingCirclesBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab4/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,23 +32,30 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/bean/JumpingCirclesBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="94" column="50" lean-forward="true" selection-start-line="94" selection-start-column="50" selection-end-line="94" selection-end-column="50" />
+            <state relative-caret-position="517">
+              <caret line="170" column="87" lean-forward="true" selection-start-line="170" selection-start-column="87" selection-end-line="170" selection-end-column="87" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2685#2686#0" expanded="true" />
-                <element signature="e#2754#2755#0" expanded="true" />
+                <element signature="e#5763#5764#0" expanded="true" />
                 <element signature="e#5793#5794#0" expanded="true" />
+                <element signature="e#6187#6188#0" expanded="true" />
                 <element signature="e#6215#6216#0" expanded="true" />
+                <element signature="e#6406#6407#0" expanded="true" />
                 <element signature="e#6436#6437#0" expanded="true" />
+                <element signature="e#6485#6486#0" expanded="true" />
                 <element signature="e#6523#6524#0" expanded="true" />
+                <element signature="e#6558#6559#0" expanded="true" />
                 <element signature="e#6586#6587#0" expanded="true" />
+                <element signature="e#6631#6632#0" expanded="true" />
                 <element signature="e#6665#6666#0" expanded="true" />
+                <element signature="e#6699#6700#0" expanded="true" />
                 <element signature="e#6728#6729#0" expanded="true" />
+                <element signature="e#6773#6774#0" expanded="true" />
                 <element signature="e#6809#6810#0" expanded="true" />
+                <element signature="e#6849#6850#0" expanded="true" />
                 <element signature="e#6882#6883#0" expanded="true" />
               </folding>
             </state>
@@ -64,11 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/bean/JumpingCirclesBeanCustomizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+            <state relative-caret-position="238">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,7 +87,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/bean/ValuesXEditor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="731">
-              <caret line="51" column="1" lean-forward="true" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+              <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -305,25 +312,27 @@
       <workItem from="1556474466581" duration="10801000" />
       <workItem from="1556545086490" duration="3211000" />
       <workItem from="1556550993530" duration="4436000" />
-      <workItem from="1557014386792" duration="3767000" />
+      <workItem from="1557014386792" duration="4082000" />
+      <workItem from="1557019010625" duration="445000" />
+      <workItem from="1557156815960" duration="558000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22215000" />
+    <option name="totallyTimeSpent" value="23533000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17537314" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17857143" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.17148982" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.17148982" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -408,27 +417,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bean/JumpingCirclesBeanBeanInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bean/JumpingCirclesBeanCustomizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/bean/ValuesXEditor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
-          <caret line="51" column="1" lean-forward="true" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+          <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -464,21 +456,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/bean/JumpingCirclesBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="94" column="50" lean-forward="true" selection-start-line="94" selection-start-column="50" selection-end-line="94" selection-end-column="50" />
+        <state relative-caret-position="517">
+          <caret line="170" column="87" lean-forward="true" selection-start-line="170" selection-start-column="87" selection-end-line="170" selection-end-column="87" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2685#2686#0" expanded="true" />
-            <element signature="e#2754#2755#0" expanded="true" />
+            <element signature="e#5763#5764#0" expanded="true" />
             <element signature="e#5793#5794#0" expanded="true" />
+            <element signature="e#6187#6188#0" expanded="true" />
             <element signature="e#6215#6216#0" expanded="true" />
+            <element signature="e#6406#6407#0" expanded="true" />
             <element signature="e#6436#6437#0" expanded="true" />
+            <element signature="e#6485#6486#0" expanded="true" />
             <element signature="e#6523#6524#0" expanded="true" />
+            <element signature="e#6558#6559#0" expanded="true" />
             <element signature="e#6586#6587#0" expanded="true" />
+            <element signature="e#6631#6632#0" expanded="true" />
             <element signature="e#6665#6666#0" expanded="true" />
+            <element signature="e#6699#6700#0" expanded="true" />
             <element signature="e#6728#6729#0" expanded="true" />
+            <element signature="e#6773#6774#0" expanded="true" />
             <element signature="e#6809#6810#0" expanded="true" />
+            <element signature="e#6849#6850#0" expanded="true" />
             <element signature="e#6882#6883#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bean/JumpingCirclesBeanBeanInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bean/JumpingCirclesBeanCustomizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

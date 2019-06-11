@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="220.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TicTacToeController">
+   <children>
+      <Button fx:id="button0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="button1" layoutX="60.0" layoutY="10.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="button2" layoutX="110.0" layoutY="10.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="button3" layoutX="160.0" layoutY="10.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="button4" layoutX="10.0" layoutY="60.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="button5" layoutX="60.0" layoutY="60.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="button6" layoutX="110.0" layoutY="60.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="button7" layoutX="160.0" layoutY="60.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="button8" layoutX="10.0" layoutY="110.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="button9" layoutX="60.0" layoutY="110.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="button10" layoutX="110.0" layoutY="110.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="button11" layoutX="160.0" layoutY="110.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="button12" layoutX="10.0" layoutY="160.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="button13" layoutX="60.0" layoutY="160.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="button14" layoutX="110.0" layoutY="160.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+      <Button fx:id="button15" layoutX="160.0" layoutY="160.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" />
+      <RadioButton fx:id="radioButtonHumanVsHuman" layoutX="223.0" layoutY="35.0" mnemonicParsing="false" selected="true" text="Człowiek vs człowiek">
+         <toggleGroup>
+            <ToggleGroup fx:id="group1" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radioButtonHumanVsAI" layoutX="223.0" layoutY="60.0" mnemonicParsing="false" text="Człowiek vs komputer" toggleGroup="$group1" />
+      <RadioButton fx:id="radioButtonAIVsAI" layoutX="223.0" layoutY="85.0" mnemonicParsing="false" text="Komputer vs komputer" toggleGroup="$group1" />
+      <Text layoutX="223.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wybierz tryb:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="223.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Poziom trufności:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="radioButtonEasy" layoutX="223.0" layoutY="127.0" mnemonicParsing="false" selected="true" text="Łatwy">
+         <toggleGroup>
+            <ToggleGroup fx:id="group2" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radioButtonHard" layoutX="223.0" layoutY="152.0" mnemonicParsing="false" text="Trudny" toggleGroup="$group2" />
+      <Button fx:id="buttonStartStop" layoutX="330.0" layoutY="185.0" mnemonicParsing="false" onAction="#actionStartStop" prefHeight="20.0" prefWidth="60.0" text="Start" />
+      <Label fx:id="labelInfo" layoutX="223.0" layoutY="180.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
